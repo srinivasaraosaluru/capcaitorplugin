@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`getContacts(...)`](#getcontacts)
+* [`getUUID(...)`](#getuuid)
 
 </docgen-index>
 
@@ -29,6 +31,36 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ value: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### getContacts(...)
+
+```typescript
+getContacts(filter: string) => Promise<{ results: any[]; }>
+```
+
+| Param        | Type                |
+| ------------ | ------------------- |
+| **`filter`** | <code>string</code> |
+
+**Returns:** <code>Promise&lt;{ results: any[]; }&gt;</code>
+
+--------------------
+
+
+### getUUID(...)
+
+```typescript
+getUUID(value: string) => Promise<{ value: string; }>
+```
+
+| Param       | Type                |
+| ----------- | ------------------- |
+| **`value`** | <code>string</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
